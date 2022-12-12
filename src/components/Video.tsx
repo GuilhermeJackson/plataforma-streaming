@@ -86,7 +86,7 @@ export function Video(props: VideoProps) {
                             <FileArrowDown size={40} />
                         </div>
                         <div className="py-6 leading-relaxed">
-                            <strong className="text-2xl">Walloaoers exclusivos</strong>
+                            <strong className="text-2xl">Wallpapers exclusivos</strong>
                             <p className="text-sm text-gray-200 mt-2">Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina</p>
                         </div>
                         <div className="h-full p-6 flex items-center">

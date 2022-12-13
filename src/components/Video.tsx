@@ -1,7 +1,8 @@
-import { Player, DefaultUi, Youtube } from "@vime/react";
+import { Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 import '@vime/core/themes/default.css';
 import { useGetLessonBySlugQuery } from "../graphql/generated";
+import { PushSpinner } from "react-spinners-kit";
 
 interface VideoProps {
     lessonSlug: string;
@@ -15,10 +16,10 @@ export function Video(props: VideoProps) {
         }
     })
 
-    if(!data || !data.lesson) {
+    if((!data || !data.lesson)) {
         return (
-            <div className="flex-1">
-                <p>Carregando...</p>
+            <div className="flex-1 flex justify-center items-center">
+                <PushSpinner size={150} color="#686769" loading={true} />
             </div>
         )
     }

@@ -24,7 +24,7 @@ export function Video(props: VideoProps) {
 
     return (
         <div className="flex-1">
-            <div className="bg-black">
+            <div className="flex justify-center bg-black">
                 <div className="h-fill w-full max-w-[1100px] max-h-[60vh] aspect-video">
                     <Player>
                         <Youtube videoId={data.lesson.videoId} />

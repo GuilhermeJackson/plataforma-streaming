@@ -5776,6 +5776,11 @@ export type GetLessonBySlugQueryVariables = Exact<{
 
 export type GetLessonBySlugQuery = { __typename?: 'Query', lesson?: { __typename?: 'Lesson', title: string, videoId: string, description?: string | null, teacher?: { __typename?: 'Teacher', name: string, bio: string, avatarURL: string } | null } | null };
 
+export type GetLessonFirstBySlugQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetLessonFirstBySlugQuery = { __typename?: 'Query', lessons: Array<{ __typename?: 'Lesson', slug: string }> };
+
 
 export const CreateSubscribeDocument = gql`
     mutation CreateSubscribe($name: String!, $email: String!) {
@@ -5891,3 +5896,37 @@ export function useGetLessonBySlugLazyQuery(baseOptions?: Apollo.LazyQueryHookOp
 export type GetLessonBySlugQueryHookResult = ReturnType<typeof useGetLessonBySlugQuery>;
 export type GetLessonBySlugLazyQueryHookResult = ReturnType<typeof useGetLessonBySlugLazyQuery>;
 export type GetLessonBySlugQueryResult = Apollo.QueryResult<GetLessonBySlugQuery, GetLessonBySlugQueryVariables>;
+export const GetLessonFirstBySlugDocument = gql`
+    query GetLessonFirstBySlug {
+  lessons(first: 1) {
+    slug
+  }
+}
+    `;
+
+/**
+ * __useGetLessonFirstBySlugQuery__
+ *
+ * To run a query within a React component, call `useGetLessonFirstBySlugQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetLessonFirstBySlugQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetLessonFirstBySlugQuery({
+ *   variables: {
+ *   },
+ * });
+ */
+export function useGetLessonFirstBySlugQuery(baseOptions?: Apollo.QueryHookOptions<GetLessonFirstBySlugQuery, GetLessonFirstBySlugQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<GetLessonFirstBySlugQuery, GetLessonFirstBySlugQueryVariables>(GetLessonFirstBySlugDocument, options);
+      }
+export function useGetLessonFirstBySlugLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<GetLessonFirstBySlugQuery, GetLessonFirstBySlugQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<GetLessonFirstBySlugQuery, GetLessonFirstBySlugQueryVariables>(GetLessonFirstBySlugDocument, options);
+        }
+export type GetLessonFirstBySlugQueryHookResult = ReturnType<typeof useGetLessonFirstBySlugQuery>;
+export type GetLessonFirstBySlugLazyQueryHookResult = ReturnType<typeof useGetLessonFirstBySlugLazyQuery>;
+export type GetLessonFirstBySlugQueryResult = Apollo.QueryResult<GetLessonFirstBySlugQuery, GetLessonFirstBySlugQueryVariables>;

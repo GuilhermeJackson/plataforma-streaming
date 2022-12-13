@@ -1,0 +1,5 @@
+query GetLessonFirstBySlug {
+  lessons(first: 1) {
+    slug
+  }
+}

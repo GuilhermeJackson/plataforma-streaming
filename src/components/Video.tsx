@@ -9,6 +9,7 @@ interface VideoProps {
 
 export function Video(props: VideoProps) {
     const { data } = useGetLessonBySlugQuery({
+        
         variables: {
             slug: props.lessonSlug
         }
@@ -26,9 +27,8 @@ export function Video(props: VideoProps) {
         <div className="flex-1">
             <div className="flex justify-center bg-black">
                 <div className="h-fill w-full max-w-[1100px] max-h-[60vh] aspect-video">
-                    <Player>
-                        <Youtube videoId={data.lesson.videoId} />
-                        <DefaultUi></DefaultUi>
+                    <Player controls={true}>
+                        <Youtube videoId={data.lesson.videoId} key={data.lesson.videoId} />
                     </Player>
                 </div>
             </div>

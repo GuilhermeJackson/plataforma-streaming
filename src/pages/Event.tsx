@@ -17,7 +17,9 @@ export function Event() {
             <Header/>
             <main className="flex flex-1">
                 <Video lessonSlug={!slug ? firstScreen : slug} /> 
-                <Sidebar/>
+                <div className="hidden xl:flex flex-initial">
+                    <Sidebar/>
+                </div>
             </main>
         </div>
     )

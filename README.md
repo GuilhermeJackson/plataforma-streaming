@@ -59,9 +59,14 @@ Formatação de datas com datefns.
 Roteamento de páginas com react-router-dom
 
 
-<!--## Otimizações
+## Otimizações
 
-Quais otimizações você fez no seu código? Por exemplo. refatorações, melhorias de desempenho, acessibilidade -->
+Quais otimizações você fez no seu código? Por exemplo. refatorações, melhorias de desempenho, acessibilidade 
+- Layout responsivo; ✔️
+- Carregamento do /event com uma aula selecionada; ✔️
+- Loading Spinner ao alterar uma aula cadastrada; ✔️
+- Bloequio do usuário ao tentar acessar uma aula que não foi liberada; ✔️
+- Mensagem de erro nos campos de inscrição; ✔️
 
 
 ## Tech Stack

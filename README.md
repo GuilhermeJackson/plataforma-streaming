@@ -61,7 +61,6 @@ Roteamento de páginas com react-router-dom
 
 ## Otimizações
 
-Quais otimizações você fez no seu código? Por exemplo. refatorações, melhorias de desempenho, acessibilidade 
 - Layout responsivo; ✔️
 - Carregamento do /event com uma aula selecionada; ✔️
 - Loading Spinner ao alterar uma aula cadastrada; ✔️

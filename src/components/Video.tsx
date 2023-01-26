@@ -66,7 +66,8 @@ export function Video(props: VideoProps) {
 
           <div className="w-full md:w-[238px] flex flex-col gap-4">
             <a
-              href=""
+              href="https://discord.gg/rocketseat"
+              target="_blank"
               className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
             >
               <DiscordLogo size={24} />
@@ -74,7 +75,8 @@ export function Video(props: VideoProps) {
             </a>
 
             <a
-              href=""
+              href="https://app.rocketseat.com.br/discover/course/especializar-react"
+              target="_blank"
               className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors"
             >
               <Lightning size={24} />
@@ -84,7 +86,8 @@ export function Video(props: VideoProps) {
         </div>
         <div className="flex flex-col md: gap-8 mt-20 md:grid grid-cols-2">
           <a
-            href=""
+            href="https://www.figma.com/file/qVfba7WEbFSatO6cnS1SjA/Plataforma-de-Evento---Ignite-Lab-(Community)?node-id=24%3A2&t=yVtewfBZEH3FyUXb-0"
+            target="_blank"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 gover:bg-gray-600 transition-colors"
           >
             <div className="md: bg-green-700 md:h-full p-6 flex items-center">
@@ -102,7 +105,8 @@ export function Video(props: VideoProps) {
             </div>
           </a>
           <a
-            href=""
+            href="https://www.figma.com/community/file/1102708662148116818"
+            target="_blank"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 gover:bg-gray-600 transition-colors"
           >
             <div className="bg-green-700 md:h-full p-6 flex items-center">
@@ -111,7 +115,7 @@ export function Video(props: VideoProps) {
             <div className="py-6 leading-relaxed">
               <strong className="text-2xl">Wallpapers exclusivos</strong>
               <p className="text-sm text-gray-200 mt-2">
-                Baixe wallpapers exclusivos do Ignite Lab e personalize a sua
+                Acesse para ter acesso aos wallpapers exclusivos do Ignite Lab e personalize a sua
                 máquina
               </p>
             </div>

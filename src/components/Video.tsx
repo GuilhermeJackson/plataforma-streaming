@@ -31,16 +31,19 @@ export function Video(props: VideoProps) {
   return (
     <div className="flex-1">
       <div className="flex justify-center bg-black">
-        <div className="h-fill w-full max-w-[1100px] max-h-[60vh] aspect-video">
+        <div
+          className="h-fill w-full max-w-[1100px] max-h-[60vh] aspect-video"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <Player controls={true}>
             <Youtube videoId={data.lesson.videoId} key={data.lesson.videoId} />
           </Player>
         </div>
       </div>
-
       <div className="p-6 max-w-[1100px] mx-auto">
         <div className="flex flex-col md:flex-row items-start gap-16 p-6">
-          <div className="flex-1">
+          <div className="flex-1" data-aos="fade-up" data-aos-delay="300">
             <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
             <p className="mt-4 text-gray-300 leading-relaxed">
               {data.lesson.description}
@@ -64,7 +67,11 @@ export function Video(props: VideoProps) {
             )}
           </div>
 
-          <div className="w-full md:w-[238px] flex flex-col gap-4">
+          <div
+            className="w-full md:w-[238px] flex flex-col gap-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <a
               href="https://discord.gg/rocketseat"
               target="_blank"
@@ -115,8 +122,8 @@ export function Video(props: VideoProps) {
             <div className="py-6 leading-relaxed">
               <strong className="text-2xl">Wallpapers exclusivos</strong>
               <p className="text-sm text-gray-200 mt-2">
-                Acesse para ter acesso aos wallpapers exclusivos do Ignite Lab e personalize a sua
-                máquina
+                Acesse para ter acesso aos wallpapers exclusivos do Ignite Lab e
+                personalize a sua máquina
               </p>
             </div>
             <div className="h-full p-6 flex items-center">

@@ -25,7 +25,12 @@ export function Subscribe() {
   return (
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
       <div className="px-0 flex flex-col md:flex-row items-center justify-between mt-20 md:px-6 mx-auto">
-        <div className="px-5 text-sm text-center md:text-left md:px-5  max-w-[640px] ">
+        <div
+          className="px-5 text-sm text-center md:text-left md:px-5  max-w-[640px] "
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="300"
+        >
           <Logo />
           <h1 className="mt-8 text-[2.5rem] leading-tight">
             Construa uma{" "}
@@ -38,7 +43,11 @@ export function Subscribe() {
             oportunidades do mercado.
           </p>
         </div>
-        <div className="w-full p-6 mt-6 md:p-8 bg-gray-700 border border-gray-500 rounded">
+        <div
+          className="w-full p-6 mt-6 md:p-8 bg-gray-700 border border-gray-500 rounded"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <strong className="text-2xl mb-6 block">
             Inscreva-se gratuitamente
           </strong>
@@ -86,7 +95,13 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img src={codeMockupImg} className="mt-10" alt=""></img>
+      <img
+        src={codeMockupImg}
+        className="mt-10"
+        alt=""
+        data-aos="fade-up"
+        data-aos-delay="300"
+      ></img>
     </div>
   );
 }

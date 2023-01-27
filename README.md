@@ -64,7 +64,7 @@ Roteamento de páginas com react-router-dom
 - Layout responsivo; ✔️
 - Carregamento do /event com uma aula selecionada; ✔️
 - Loading Spinner ao alterar uma aula cadastrada; ✔️
-- Bloequio do usuário ao tentar acessar uma aula que não foi liberada; ✔️
+- Bloqueio do usuário ao tentar acessar uma aula que não foi liberada; ✔️
 - Mensagem de erro nos campos de inscrição; ✔️
 
 

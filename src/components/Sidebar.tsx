@@ -5,7 +5,7 @@ export function Sidebar() {
   const { data } = useGetLessonsQuery();
 
   return (
-    <aside className="w-full xl:w-[348px] bg-gray-700 p-6 border-l rounded-lg border-gray-600 h-[116.5vh] overflow-y-scroll sidebar ">
+    <aside className="w-full xl:w-[348px] bg-gray-700 p-6 border-l rounded-lg border-gray-600 h-[116.5vh] overflow-auto sidebar ">
       <span
         className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block"
         data-aos="fade-left"
